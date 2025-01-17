@@ -1,0 +1,35 @@
+﻿/* Highlighting for interactivity */
+.square.highlight {
+    outline: 3px solid #00cc44;
+    box-shadow: 0 0 10px rgba(0, 204, 68, 0.5);
+}
+
+.piece.dragging {
+    opacity: 0.7;
+    z-index: 1000;
+}
+
+.highlight {
+    background-color: yellow;
+    border: 2px solid orange;
+    transition: all 0.3s ease;
+}
+
+.highlight-piece {
+    background-color: yellow;
+}
+
+.highlight-square-initial {
+    background-color: rgba(0, 255, 0, 0.3); /* Green for initial position */
+    border: 2px solid green;
+}
+
+.highlight-square-target {
+    background-color: rgba(0, 0, 255, 0.3); /* Blue for target position */
+    border: 2px solid blue;
+}
+
+.highlight-square-target-eat {
+    background-color: rgba(255, 0, 0, 0.63); /* Blue for target position */
+    border: 2px solid rgb(255, 0, 0);
+}

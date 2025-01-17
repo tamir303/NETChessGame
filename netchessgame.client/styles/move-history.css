@@ -1,0 +1,72 @@
+﻿/* Move History */
+.footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.move-history {
+    background: #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.move-history-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.move-history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.move-history-list li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 16px;
+    color: #495057;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.move-history-list li:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+.move-history-list li:last-child {
+    border-bottom: none;
+}
+
+/* Smooth scroll */
+.move-history-list {
+    scroll-behavior: smooth;
+}
+
+/* Scrollbar styles */
+.move-history-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.move-history-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.move-history-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}

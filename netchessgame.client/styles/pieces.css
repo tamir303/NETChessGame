@@ -1,0 +1,14 @@
+﻿/* Chess piece styling */
+.piece {
+    width: 60px;
+    height: 60px;
+    cursor: grab;
+    transition: transform 0.5s ease, left 0.5s ease, top 0.5s ease;
+    user-select: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.piece:active {
+    cursor: grabbing;
+}
