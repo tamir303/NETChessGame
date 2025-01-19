@@ -7,7 +7,7 @@ namespace NETChessGame.Server.Dto.state
     public class StateResponse : BaseResponse
     {
         [Required, Length(maximumLength: MAX_PIECES, minimumLength: MIN_PIECES), DisallowNull]
-        public IEnumerable<ChessPiece> Pieces { get; set; }
+        public IEnumerable<ChessPiece>? Pieces { get; set; }
 
         public StateResponse(bool success, string message, IEnumerable<ChessPiece> pieces) 
             : base(success, message)

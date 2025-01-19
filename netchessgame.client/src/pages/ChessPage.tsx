@@ -4,7 +4,7 @@ import Board from '../components/Board';
 import MoveHistory from '../components/MoveHistory';
 import { ApiClient, ResponseProps } from '../services/ApiClient';
 
-const apiClient = new ApiClient('http://localhost:5256/api/v1/chess');
+const apiClient = new ApiClient({ controllerPrefix: "/chess" });
 
 const ChessPage: React.FC = () => {
     const [pieces, setPieces] = useState([]);

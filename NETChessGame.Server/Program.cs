@@ -28,6 +28,7 @@ void ConfigureServices(IServiceCollection services, IConfiguration configuration
 
     // Add Swagger for API Documentation
     services.AddEndpointsApiExplorer();
+    services.AddSwaggerGen();
 
     // Add CORS (Cross-Origin Resource Sharing)
     services.AddCors(options =>
@@ -59,8 +60,8 @@ void ConfigureMiddleware(WebApplication app)
 {
     // Use Swagger in Development
     if (app.Environment.IsDevelopment())
-    {
-
+    { 
+        app.UseSwagger();
     }
 
     // Use CORS

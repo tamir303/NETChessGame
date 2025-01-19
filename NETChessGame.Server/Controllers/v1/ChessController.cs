@@ -7,10 +7,10 @@ using NETChessGame.Server.Logic.Manager;
 using static NETChessGame.Server.Dto.moves.ModelControllerConverter;
 
 
-namespace NETChessGame.Server.Controllers
+namespace NETChessGame.Server.Controllers.v1
 {
-    [Route("/v1/[controller]")]
     [ApiController]
+    [Route("/[controller]")]
     public partial class ChessController(ILogger<ChessController> logger) : ApiController(logger)
     {
         [HttpGet]
@@ -43,7 +43,7 @@ namespace NETChessGame.Server.Controllers
         {
             try
             {
-                if (String.IsNullOrEmpty(request.Id))
+                if (string.IsNullOrEmpty(request.Id))
                     return BadRequest(new BaseResponse(false, "Id is required"));
 
                 return Ok(
